@@ -1,18 +1,14 @@
 body {
-    background: #f4f4f9; /* Fallback color */
-    background: linear-gradient(to right, rgba(51, 51, 51, 0.7) 0%, #f4f4f9 10%, #f4f4f9 90%, rgba(51, 51, 51, 0.7) 100%);
+    background: linear-gradient(to right, rgba(51, 51, 51, 0.7) 0%, #f4f4f9 20%, #f4f4f9 80%, rgba(51, 51, 51, 0.7) 100%);
     color: #333;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    border-left: 4px solid rgba(51, 51, 51, 0.7);
-    border-right: 4px solid rgba(51, 51, 51, 0.7);
-    transition: border-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 body:hover {
-    border-left: 4px solid rgba(51, 51, 51, 1);
-    border-right: 4px solid rgba(51, 51, 51, 1);
+    background: linear-gradient(to right, rgba(51, 51, 51, 1) 0%, #f4f4f9 20%, #f4f4f9 80%, rgba(51, 51, 51, 1) 100%);
 }
 
 #background-video {
