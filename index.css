@@ -18,7 +18,7 @@ body:hover {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: center top; /* Adjusted to crop the background footage slightly */
+    object-position: center 20%; /* Adjusted to crop the background footage more */
     z-index: -1;
 }
 
