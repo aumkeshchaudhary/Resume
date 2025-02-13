@@ -4,7 +4,20 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    /* Removed background-image property */
 }
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 1; /* Ensure full opacity */
+}
+
 h1 {
     color: #003366;
     text-align: center;
@@ -60,4 +73,27 @@ div {
 .header h1 {
     margin: 0;
     color: #ffffff;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-links img {
+    margin-right: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.contact-links a:hover img {
+    transform: rotate(360deg);
 }
