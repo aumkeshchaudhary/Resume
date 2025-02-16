@@ -148,16 +148,18 @@ div {
 }
 
 .Transcript-button {
-    background-color: #003366; /* Blue color */
+    background-color: #003366;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
-    cursor: pointer;
+    font-weight: bold;
     border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    margin-top: 15px; /* Adds spacing above the button */
+    display: inline-block; /* Ensures proper inline centering */
 }
 
  .Transcript-button:hover {
@@ -168,6 +170,20 @@ div {
     margin-left: auto;
     margin-right: auto;
 }
+#education {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#education .cv-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 10px auto; /* Ensures centering */
 
 
 /* Responsive Design */
