@@ -162,8 +162,9 @@ div {
     display: inline-block; /* Ensures proper inline centering */
 }
 
- .Transcript-button:hover {
-    background-color: #0056b3; /* Darker blue */
+.Transcript-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
 }
 .Transcript-button {
     display: block;
