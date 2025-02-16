@@ -135,8 +135,10 @@ div {
 }
 
 #about .cv-button {
-    display: inline-block;
-    margin-top: 10px;
+    display: block;  /* Change inline-block to block */
+    width: fit-content; /* Ensure it only takes as much width as needed */
+    text-align: center; /* Center text inside */
+    margin: 10px auto; /* Center button horizontally */
 }
 
 /* Responsive Design */
