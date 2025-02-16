@@ -134,19 +134,26 @@ div {
         width: 100%;
     }
 
-    .contact-links {
+   .contact-links {
         display: flex;
-        flex-direction: column; /* Stack contact links on mobile */
-        gap: 10px;
-        text-align: center;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align items */
+        gap: 10px; /* Add spacing */
     }
 
     .contact-links a {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
-        font-size: 14px;
+        gap: 8px;
+        font-size: 14px; /* Smaller text */
+        text-decoration: none;
+    }
+
+    .contact-links img {
+        width: 24px; /* Reduce icon size */
+        height: 24px;
+        max-width: 100%;
     }
 
     h1 {
