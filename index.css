@@ -147,7 +147,7 @@ div {
     margin: 10px auto; /* Ensures centering */
 }
 
-.cv-button, .Transcript-button {
+.Transcript-button {
     background-color: #003366; /* Blue color */
     color: white;
     border: none;
@@ -160,9 +160,15 @@ div {
     transition: background-color 0.3s ease;
 }
 
-.cv-button:hover, .Transcript-button:hover {
+ .Transcript-button:hover {
     background-color: #0056b3; /* Darker blue */
 }
+.Transcript-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
