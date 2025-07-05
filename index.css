@@ -287,40 +287,38 @@ div {
 }
 
 /* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .contact-links {
-        gap: 20px;
-        padding: 0 15px;
-    }
+.contact-links {
+    gap: 20px;
+    padding: 0 15px;
+}
 
-    .contact-links a {
-        width: 100%;
-        max-width: 100%;
-        padding: 15px 25px;
-        background-color: rgba(255, 255, 255, 0.95);
-    }
+.contact-links a {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
 
-    .contact-links img {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-    }
+.contact-links img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
 
-    .contact-links span {
-        font-size: 18px;
-    }
+.contact-links span {
+    font-size: 18px;
+}
 
-    /* Add subtle animation on tap */
-    .contact-links a:active {
-        transform: scale(0.98);
-        background-color: rgba(245, 245, 245, 0.95);
-    }
+/* Add subtle animation on tap */
+.contact-links a:active {
+    transform: scale(0.98);
+    background-color: rgba(245, 245, 245, 0.95);
+}
 
-    /* Adjust hover states for mobile */
-    .contact-links a:hover {
-        transform: none;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+/* Adjust hover states for mobile */
+.contact-links a:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 480px) {
