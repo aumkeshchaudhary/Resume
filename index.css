@@ -1,3 +1,4 @@
+
 body {
     background: linear-gradient(to right, rgba(51, 51, 51, 0.7) 0%, #f4f4f9 20%, #f4f4f9 80%, rgba(51, 51, 51, 0.7) 100%);
     color: #333;
@@ -185,8 +186,40 @@ div {
     width: auto;
     text-align: center;
     margin: 10px auto; /* Ensures centering */
+}
 
+.work-experience {
+    background: rgba(245, 245, 255, 0.92);
+    border-left: 5px solid #4b6cb7;
+    margin-bottom: 32px;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(75, 108, 183, 0.07);
+}
 
+.work-experience h1 {
+    color: #4b6cb7;
+    margin-bottom: 16px;
+}
+
+.work-experience .date-range {
+    font-size: 0.95em;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.work-experience ol {
+    padding-left: 18px;
+}
+
+.work-experience ul {
+    margin-top: 6px;
+    margin-bottom: 18px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
