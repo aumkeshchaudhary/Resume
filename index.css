@@ -28,11 +28,9 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
-
 p, li {
     color: #333;
 }
-
 a {
     color: #0056b3;
     text-decoration: none;
@@ -40,30 +38,33 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
 img {
     display: block;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* ✅ Only style divs that need it */
-.content-box {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(244, 244, 249, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 ul, ol {
     margin: 20px auto;
     padding: 0 20px;
     max-width: 800px;
 }
 
+/* ✅ Use only when you want a styled box */
+.content-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(244, 244, 249, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .container h1 {
     margin-bottom: 20px;
 }
@@ -73,7 +74,6 @@ ul, ol {
 .container ul, .container ol {
     margin-bottom: 20px;
 }
-
 .header {
     background-color: #003366;
     color: #ffffff;
@@ -85,55 +85,6 @@ ul, ol {
     color: #ffffff;
 }
 
-/* ✅ CV and Transcript Button Styling */
-.cv-button,
-.Transcript-button {
-    background-color: #003366;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out, transform 0.2s;
-    display: inline-block;
-    text-align: center;
-    margin: 10px auto;
-}
-
-.cv-button:hover,
-.Transcript-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-/* ✅ Fix white box issue for buttons */
-.button-wrapper {
-    text-align: center;
-    background: transparent;
-    box-shadow: none;
-    padding: 0;
-    margin: 10px auto;
-}
-
-/* Optional: use layout styles only where needed */
-.work-experience {
-    background-color: rgba(244, 244, 249, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-.work-experience h1 {
-    text-align: center;
-    color: #003366;
-    margin-bottom: 20px;
-}
-
-/* Contact links */
 .contact-links a {
     display: flex;
     align-items: center;
@@ -152,6 +103,104 @@ ul, ol {
 }
 .contact-links a:hover img {
     transform: rotate(360deg);
+}
+
+/* CV Download Button */
+.cv-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.cv-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.cv-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Centering the Button in #about */
+#about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#about .cv-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.Transcript-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.Transcript-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.Transcript-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#education {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#education .cv-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.work-experience {
+    background-color: rgba(244, 244, 249, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.work-experience h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
 }
 
 /* Responsive Design */
@@ -188,7 +237,7 @@ ul, ol {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
         margin: 25px 0;
         padding: 0 15px;
     }
