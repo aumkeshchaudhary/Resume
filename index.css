@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body:hover {
@@ -19,7 +19,7 @@ body:hover {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: center 10%;
+    object-position: center 10%; /* Adjusted to crop the background footage slightly less */
     z-index: -1;
 }
 
@@ -49,19 +49,16 @@ ul, ol {
     padding: 0 20px;
     max-width: 800px;
 }
-
-/* ✅ Use only when you want a styled box */
-.content-box {
+div {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .container {
     padding: 20px;
-    background-color: rgba(244, 244, 249, 0.9);
+    background-color: rgba(244, 244, 249, 0.9); /* Adjusted background color */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -92,19 +89,21 @@ ul, ol {
     color: inherit;
     transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .contact-links a:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .contact-links img {
     margin-right: 5px;
     border-radius: 50%;
     transition: transform 0.2s;
 }
+
 .contact-links a:hover img {
     transform: rotate(360deg);
 }
-
 /* CV Download Button */
 .cv-button {
     background-color: #003366;
@@ -117,12 +116,12 @@ ul, ol {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out, transform 0.2s;
-    margin-top: 15px;
-    display: inline-block;
+    margin-top: 15px; /* Adds spacing above the button */
+    display: inline-block; /* Ensures proper inline centering */
 }
 
 .cv-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05);
 }
 .cv-button {
@@ -145,7 +144,7 @@ ul, ol {
     display: inline-block;
     width: auto;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px auto; /* Ensures centering */
 }
 
 .Transcript-button {
@@ -159,12 +158,12 @@ ul, ol {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out, transform 0.2s;
-    margin-top: 15px;
-    display: inline-block;
+    margin-top: 15px; /* Adds spacing above the button */
+    display: inline-block; /* Ensures proper inline centering */
 }
 
 .Transcript-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05);
 }
 .Transcript-button {
@@ -172,7 +171,6 @@ ul, ol {
     margin-left: auto;
     margin-right: auto;
 }
-
 #education {
     text-align: center;
     display: flex;
@@ -186,13 +184,12 @@ ul, ol {
     display: inline-block;
     width: auto;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px auto; /* Ensures centering */
 }
-
 .work-experience {
-    background-color: rgba(244, 244, 249, 0.9);
+    background-color: rgba(244, 244, 249, 0.9); /* Match .container background */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    /* Match .container shadow */
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -203,77 +200,106 @@ ul, ol {
     margin-bottom: 20px;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        font-size: 16px;
-        padding: 0 15px;
-        background: linear-gradient(to right, rgba(51, 51, 51, 0.7) 0%, #f4f4f9 15%, #f4f4f9 85%, rgba(51, 51, 51, 0.7) 100%);
+        font-size: 16px; /* Slightly larger base font size */
+        padding: 0 15px; /* More breathing room on sides */
+        background: linear-gradient(to right, rgba(51, 51, 51, 0.7) 0%, #f4f4f9 15%, #f4f4f9 85%, rgba(51, 51, 51, 0.7) 100%); /* Stronger gradient for better contrast */
     }
 
     .container {
         max-width: 100%;
-        padding: 25px;
-        margin: 15px auto;
-        background-color: rgba(244, 244, 249, 0.95);
+        padding: 25px; /* Increased padding */
+        margin: 15px auto; /* Reduced margin */
+        background-color: rgba(244, 244, 249, 0.95); /* More opaque background */
     }
 
     .header {
         padding: 15px;
-        font-size: 24px;
+        font-size: 24px; /* Larger header text */
     }
 
     img {
-        max-width: 100%;
-        margin: 15px auto;
+        max-width: 100%; /* Full width images */
+        margin: 15px auto; /* Adjusted spacing */
     }
 
     #background-video {
-        object-fit: cover;
-        object-position: center center;
+        object-fit: cover; /* Maintain video coverage */
+        object-position: center center; /* Better center positioning */
     }
 
-    .contact-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin: 25px 0;
-        padding: 0 15px;
-    }
+  /* Add this to your existing CSS */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
 
-    .contact-links a {
-        width: 100%;
-        max-width: 100%;
-        padding: 15px 25px;
-        background-color: rgba(255, 255, 255, 0.95);
-        border-radius: 25px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        text-decoration: none !important;
-    }
+.contact-links a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
 
-    .contact-links img {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-    }
+.contact-links img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
 
-    .contact-links span {
-        font-size: 18px;
-        color: #003366;
-        font-weight: 500;
-    }
+.contact-links span {
+    font-size: 16px;
+    color: #003366;
+    font-weight: 500;
+}
 
-    .contact-links a:active {
-        transform: scale(0.98);
-        background-color: rgba(245, 245, 245, 0.95);
-    }
+/* Mobile-specific adjustments */
+.contact-links {
+    gap: 20px;
+    padding: 0 15px;
+}
 
-    .contact-links a:hover {
-        transform: none;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+.contact-links a {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.contact-links img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.contact-links span {
+    font-size: 18px;
+}
+
+/* Add subtle animation on tap */
+.contact-links a:active {
+    transform: scale(0.98);
+    background-color: rgba(245, 245, 245, 0.95);
+}
+
+/* Adjust hover states for mobile */
+.contact-links a:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 480px) {
