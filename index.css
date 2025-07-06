@@ -55,11 +55,30 @@ ul, ol {
     max-width: 800px;
 }
 
+/* ⚠️ Updated: Exclude .button-wrapper from generic div styling */
+div:not(.button-wrapper) {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .container {
     padding: 20px;
     background-color: rgba(244, 244, 249, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+.container p {
+    margin-bottom: 20px;
+}
+.container ul, .container ol {
+    margin-bottom: 20px;
 }
 
 .header {
@@ -74,30 +93,7 @@ ul, ol {
     color: #ffffff;
 }
 
-.contact-links a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.contact-links a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contact-links img {
-    margin-right: 5px;
-    border-radius: 50%;
-    transition: transform 0.2s;
-}
-
-.contact-links a:hover img {
-    transform: rotate(360deg);
-}
-
-/* CV and Transcript Button Styling */
+/* ✅ CV and Transcript Button Styling */
 .cv-button,
 .Transcript-button {
     background-color: #003366;
@@ -121,13 +117,14 @@ ul, ol {
     transform: scale(1.05);
 }
 
-/* Remove white box behind buttons */
+/* ✅ Button centering containers — no background or shadow */
+.button-wrapper {
+    text-align: center;
+}
+
+/* Section layout (not touched) */
 #about,
 #education {
-    background-color: transparent;
-    box-shadow: none;
-    padding: 0;
-    margin: 20px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -136,7 +133,14 @@ ul, ol {
     width: 100%;
 }
 
-/* Work Experience Box */
+#about .cv-button,
+#education .cv-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
 .work-experience {
     background-color: rgba(244, 244, 249, 0.9);
     border-radius: 10px;
@@ -145,11 +149,34 @@ ul, ol {
     margin: 20px auto;
     max-width: 800px;
 }
-
 .work-experience h1 {
     text-align: center;
     color: #003366;
     margin-bottom: 20px;
+}
+
+/* Contact links */
+.contact-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-links img {
+    margin-right: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.contact-links a:hover img {
+    transform: rotate(360deg);
 }
 
 /* Responsive Design */
